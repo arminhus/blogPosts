@@ -11,11 +11,11 @@ BlogPosts.create(
 );
 BlogPosts.create(
   "Second Node/Express Create",
-  "This is a my very first blog post whiles learning how to use Node and express.",
+  "This is a my second blog post whiles learning how to use Node and express.",
   "Armin"
 );
 
-router.get("/blog-posts", (req, res) => {
+router.get("/", (req, res) => {
   res.json(BlogPosts.get());
   //   res.send("hello");
 });
